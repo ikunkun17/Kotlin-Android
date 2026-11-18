@@ -1,8 +1,10 @@
 package com.androidbook.bookmarket
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -18,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        }
+
+    fun onStartButtonClick(view: View) {
+        Toast.makeText(applicationContext, "도서 쇼핑몰을 시작합니다.", Toast.LENGTH_SHORT).show()
+
     }
+
 }
