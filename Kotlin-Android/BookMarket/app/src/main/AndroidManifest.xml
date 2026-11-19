@@ -11,18 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookMarket">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity"/>
-        <activity android:name=".BooksActivity"/>
-        <activity android:name=".BookActivity"/>
+
+        <activity android:name=".MenuActivity" />
+
+        <!-- 테마를 Theme.Material3.DayNight(또는 Theme.AppCompat.Light.DarkActionBar)로 변경 -->
+        <activity
+            android:name=".BooksActivity"
+            android:label="도서목록"
+            android:theme="@style/Theme.Material3.DayNight" />
+
+        <activity
+            android:name=".BookActivity"
+            android:label="도서상세정보"
+            android:theme="@style/Theme.Material3.DayNight" />
+
     </application>
 
 </manifest>
